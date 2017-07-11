@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <package>
-  <name>image_stream_to_heatmap</name>
+  <name>image_topic_to_image</name>
   <version>1.0.0</version>
 
   <description>
-    The image_stream_to_heatmap package contains a node to publish a video
+    The image_topic_to_image package contains a node to publish a video
     stream from a raw binary file in ROS image topics.
   </description>
 
   <maintainer email="polidorop@janelia.hhmi.org">Peter Polidoro</maintainer>
   <author>Peter Polidoro</author>
 
-  <url type="website">https://github.com/janelia-ros/image_stream_to_heatmap.git</url>
+  <url type="website">https://github.com/janelia-ros/image_topic_to_image.git</url>
 
   <license>BSD</license>
 

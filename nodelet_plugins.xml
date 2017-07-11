@@ -1,7 +1,7 @@
-<library path="lib/libimage_stream_to_heatmap">
+<library path="lib/libimage_topic_to_image">
 
-  <class name="image_stream_to_heatmap/process_stream"
-	 type="image_stream_to_heatmap::ProcessStreamNodelet"
+  <class name="image_topic_to_image/process_stream"
+	 type="image_topic_to_image::ProcessStreamNodelet"
 	 base_class_type="nodelet::Nodelet">
     <description>
       Nodelet to

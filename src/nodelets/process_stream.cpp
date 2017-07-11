@@ -19,7 +19,7 @@
 #include <ros/console.h>
 
 
-namespace image_stream_to_heatmap {
+namespace image_topic_to_image {
 
 class ProcessStreamNodelet : public nodelet::Nodelet
 {
@@ -45,7 +45,7 @@ void ProcessStreamNodelet::onInit()
 {
   ros::NodeHandle& nh = getNodeHandle();
   ros::NodeHandle& private_nh = getPrivateNodeHandle();
-  ros::NodeHandle nh_out(nh,"heatmap");
+  ros::NodeHandle nh_out(nh,"accumulated");
   it_in_.reset(new image_transport::ImageTransport(nh));
   it_out_.reset(new image_transport::ImageTransport(nh_out));
 
@@ -93,8 +93,8 @@ void ProcessStreamNodelet::imageCb(const sensor_msgs::ImageConstPtr& image_msg)
 
 }
 
-} // namespace image_stream_to_heatmap
+} // namespace image_topic_to_image
 
 // register nodelet
 #include <pluginlib/class_list_macros.h>
-PLUGINLIB_EXPORT_CLASS( image_stream_to_heatmap::ProcessStreamNodelet,nodelet::Nodelet)
+PLUGINLIB_EXPORT_CLASS( image_topic_to_image::ProcessStreamNodelet,nodelet::Nodelet)

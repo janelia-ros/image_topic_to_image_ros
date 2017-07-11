@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(image_stream_to_heatmap)
+project(image_topic_to_image)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
@@ -36,16 +36,16 @@ include_directories(include)
 
 add_library(${PROJECT_NAME}
   src/nodelets/process_stream.cpp
-  src/libimage_stream_to_heatmap/advertisement_checker.cpp
+  src/libimage_topic_to_image/advertisement_checker.cpp
 )
 add_dependencies(${PROJECT_NAME} ${PROJECT_NAME}_gencfg)
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${OpenCV_LIBRARIES})
 
 # Standalone node
-add_executable(image_stream_to_heatmap_exe src/nodes/image_stream_to_heatmap.cpp)
-target_link_libraries(image_stream_to_heatmap_exe ${PROJECT_NAME}  ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${OpenCV_LIBRARIES})
-SET_TARGET_PROPERTIES(image_stream_to_heatmap_exe PROPERTIES OUTPUT_NAME image_stream_to_heatmap)
-install(TARGETS image_stream_to_heatmap_exe
+add_executable(image_topic_to_image_exe src/nodes/image_topic_to_image.cpp)
+target_link_libraries(image_topic_to_image_exe ${PROJECT_NAME}  ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${OpenCV_LIBRARIES})
+SET_TARGET_PROPERTIES(image_topic_to_image_exe PROPERTIES OUTPUT_NAME image_topic_to_image)
+install(TARGETS image_topic_to_image_exe
         DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

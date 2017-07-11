@@ -1,4 +1,4 @@
-# image_stream_to_heatmap_ros
+# image_topic_to_image_ros
 
 Authors:
 
@@ -11,7 +11,7 @@ License:
 ##Running
 
 ```shell
-roslaunch image_stream_to_heatmap raw_video_file.launch video_stream_provider:=/home/polidorop/zebrafish_tracker/Videos/dark3_uint8_1024x1200_2500frames.raw width:=1024 height:=1200 frame_count:=2500 fps:=50
+roslaunch image_topic_to_image raw_video_file.launch video_stream_provider:=/home/polidorop/zebrafish_tracker/Videos/dark3_uint8_1024x1200_2500frames.raw width:=1024 height:=1200 frame_count:=2500 fps:=50
 ```
 
 ```shell

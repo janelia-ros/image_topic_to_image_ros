@@ -31,10 +31,10 @@
  *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  *********************************************************************/
-#include "image_stream_to_heatmap/advertisement_checker.h"
+#include "image_topic_to_image/advertisement_checker.h"
 #include <boost/foreach.hpp>
 
-namespace image_stream_to_heatmap
+namespace image_topic_to_image
 {
 
 AdvertisementChecker::AdvertisementChecker(const ros::NodeHandle& nh,
@@ -90,4 +90,4 @@ void AdvertisementChecker::stop()
   timer_.stop();
 }
 
-} // namespace image_stream_to_heatmap
+} // namespace image_topic_to_image

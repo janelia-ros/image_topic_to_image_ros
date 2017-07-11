@@ -31,12 +31,12 @@
  *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  *********************************************************************/
-#ifndef IMAGE_STREAM_TO_HEATMAP_ADVERTISEMENT_CHECKER_H
-#define IMAGE_STREAM_TO_HEATMAP_ADVERTISEMENT_CHECKER_H
+#ifndef IMAGE_TOPIC_TO_IMAGE_ADVERTISEMENT_CHECKER_H
+#define IMAGE_TOPIC_TO_IMAGE_ADVERTISEMENT_CHECKER_H
 
 #include <ros/ros.h>
 
-namespace image_stream_to_heatmap
+namespace image_topic_to_image
 {
 
 class AdvertisementChecker
@@ -57,6 +57,6 @@ public:
   void stop();
 };
 
-} // namespace image_stream_to_heatmap
+} // namespace image_topic_to_image
 
 #endif
