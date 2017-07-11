@@ -35,7 +35,7 @@ include_directories(
 include_directories(include)
 
 add_library(${PROJECT_NAME}
-  src/nodelets/create_file.cpp
+  src/nodelets/process_stream.cpp
   src/libimage_stream_to_heatmap/advertisement_checker.cpp
 )
 add_dependencies(${PROJECT_NAME} ${PROJECT_NAME}_gencfg)
