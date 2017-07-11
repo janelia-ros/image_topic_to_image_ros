@@ -1,0 +1,11 @@
+<library path="lib/libimage_stream_to_heatmap">
+
+  <class name="image_stream_to_heatmap/create_file"
+	 type="image_stream_to_heatmap::CreateFileNodelet"
+	 base_class_type="nodelet::Nodelet">
+    <description>
+      Nodelet to
+    </description>
+  </class>
+
+</library>
