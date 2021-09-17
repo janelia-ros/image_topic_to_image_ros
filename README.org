@@ -1,6 +1,6 @@
 #+TITLE: image_topic_to_image_ros
 #+AUTHOR: Peter Polidoro
-#+EMAIL: peterpolidoro@gmail.com
+#+EMAIL: peter@polidoro.io
 
 * Package Information
   - Author :: Peter Polidoro
